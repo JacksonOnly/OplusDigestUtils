@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OplusDigestUtils.App/OplusDigestUtils.App.csproj" />
+  <Project Path="OplusDigestUtils/OplusDigestUtils.csproj" />
+</Solution>
