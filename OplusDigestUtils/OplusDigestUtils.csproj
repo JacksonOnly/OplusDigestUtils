@@ -5,6 +5,21 @@
         <LangVersion>14.0</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <PackageId>OplusDigestUtils</PackageId>
+        <Authors>XYCS</Authors>
+        <Description>Read-only parser and cryptographic verifier for Oplus Qualcomm Digest mbn</Description>
+        <Copyright>Copyright (c) XYCS 2026</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/JacksonOnly/OplusDigestUtils</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/JacksonOnly/OplusDigestUtils.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <PackageTags>qualcomm oplus elf mbn digest firmware oppo</PackageTags>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>
