@@ -39,10 +39,9 @@ if (paths.Count == 0)
     return 2;
 }
 
+return ParseDigests(paths, json);
 
-return ParseDigests(paths,json);
-
-static int ParseDigests( 
+static int ParseDigests(
     IReadOnlyList<string> paths,
     bool json)
 {

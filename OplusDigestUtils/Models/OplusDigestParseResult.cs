@@ -8,7 +8,7 @@ public class OplusDigestParseResult
     public OplusDigest Digest { get; internal set; } = null!;
     public QualcommOemType OemType { get; internal set; }
     public QualcommSocType SocType { get; internal set; }
-    public QcomVerificationStatus  VerificationStatus { get; internal set; }
+    public QcomVerificationStatus VerificationStatus { get; internal set; }
     public string RootCaHashHex { get; internal set; } = string.Empty;
     public string? ErrorMessage { get; internal set; }
 }

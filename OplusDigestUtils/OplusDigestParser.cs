@@ -70,7 +70,6 @@ public class OplusDigestParser : IOplusDigestParser
 #endif
             result.Digest = digest;
             result.ErrorMessage = null;
-            
             result.IsSuccess = true;
 
             var verifier = new QcomImageVerifier();
