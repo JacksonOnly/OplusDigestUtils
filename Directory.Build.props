@@ -1,0 +1,11 @@
+<Project>
+
+  <PropertyGroup Condition="'$(VersionDate)' != '' and '$(VersionHash)' != ''">
+    <Version>$(VersionDate)-g$(VersionHash)</Version>
+    <AssemblyVersion>$(VersionDate).0</AssemblyVersion>
+    <FileVersion>$(VersionDate).0</FileVersion>
+    <InformationalVersion>$(VersionDate)+g$(VersionHash)</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+</Project>
