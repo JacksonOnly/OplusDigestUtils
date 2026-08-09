@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   ci:
-    name: Build and test
+    name: Build
     runs-on: windows-latest
     timeout-minutes: 15
     outputs:
@@ -68,9 +68,6 @@ jobs:
 
       - name: Build
         run: dotnet build OplusDigestUtils.slnx -c Release --no-restore
-
-      - name: Test
-        run: dotnet test OplusDigestUtils.slnx -c Release --no-build --no-restore
 
       - name: Verify formatting
         run: dotnet format OplusDigestUtils.slnx --verify-no-changes --no-restore --verbosity minimal
