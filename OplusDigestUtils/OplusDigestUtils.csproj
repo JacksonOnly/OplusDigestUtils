@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="QcomImageUtils" Version="2026.8.8-g32680cb" />
+      <PackageReference Include="QcomImageUtils" Version="2026.8.9-g4d540f2" />
     </ItemGroup>
 
 </Project>
