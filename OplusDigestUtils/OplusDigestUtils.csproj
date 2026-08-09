@@ -20,7 +20,11 @@
         <PackageTags>qualcomm oplus elf mbn digest firmware oppo</PackageTags>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    </PropertyGroup>
+    </PropertyGroup
+
+    <ItemGroup>
+      <None Include="..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="QcomImageUtils" Version="2026.8.9-g4d540f2" />
