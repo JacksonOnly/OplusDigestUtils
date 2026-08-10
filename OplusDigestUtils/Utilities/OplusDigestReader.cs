@@ -35,6 +35,7 @@ internal class OplusDigestReader
         partition.Sectors = BitConverter.ToUInt64(buffer, 0x5C);
         partition.HashHex = BitConverter.ToString(buffer, 0x64).Replace("-", string.Empty);
 #endif
+        partition.HasHash = partition.HashHex.Replace("0", string.Empty).Length > 0;
         return partition;
     }
 

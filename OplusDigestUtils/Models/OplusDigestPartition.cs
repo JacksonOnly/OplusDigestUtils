@@ -9,4 +9,5 @@ public class OplusDigestPartition
     public ulong StartSector { get; internal set; }
     public ulong Sectors { get; internal set; }
     public string HashHex { get; internal set; } = string.Empty;
+    public bool HasHash { get; internal set; }
 }

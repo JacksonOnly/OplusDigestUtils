@@ -118,6 +118,7 @@ static void PrintResult(OplusDigestParseResult result)
                 Console.WriteLine($"        StartSector: {p.StartSector}");
                 Console.WriteLine($"        Sectors: {p.Sectors}");
                 Console.WriteLine($"        HashHex: {p.HashHex}");
+                Console.WriteLine($"        HasHash: {p.HasHash}");
             }
         }
         else
