@@ -35,11 +35,12 @@ public class OplusDigestParser : IOplusDigestParser
             result.ErrorMessage = "目标文件并非正确的Digest格式";
             return false;
         }
-
+        
         result.OemType = qcomImageParseResult.OemType;
         result.SocType = qcomImageParseResult.SocType;
         result.RootCaHashHex = qcomImageParseResult.RootCaHash;
         // 这里为了偷懒，我就不去解析了，直接固定offset来获取对应的程序段了
+        bool isMbn = false;
         int offset = 0;
         int digestLength = 0;
         if (data.StartsWith<byte>(_elfMagic))
@@ -49,6 +50,7 @@ public class OplusDigestParser : IOplusDigestParser
         }
         else if (data.StartsWith(_mbnMagic))
         {
+            isMbn = true;
             offset = MbnOffset;
             digestLength = BinaryPrimitives.ReadInt32LittleEndian(data.Slice(0x14));
         }
@@ -75,7 +77,8 @@ public class OplusDigestParser : IOplusDigestParser
             var verifier = new QcomImageVerifier();
             if (verifier.TryVerify(data, out var verificationResult))
             {
-                result.VerificationStatus = verificationResult.HashTableStatus;
+                result.VerificationStatus =
+                    isMbn ? verificationResult.SignatureStatus : verificationResult.HashTableStatus;
             }
             else
             {

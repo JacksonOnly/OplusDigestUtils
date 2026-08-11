@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="QcomImageUtils" Version="2026.8.9-g4d540f2" />
+      <PackageReference Include="QcomImageUtils" Version="2026.8.11-g30ff56d" />
     </ItemGroup>
 
 </Project>
