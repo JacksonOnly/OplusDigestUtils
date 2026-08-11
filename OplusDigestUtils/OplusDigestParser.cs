@@ -35,7 +35,7 @@ public class OplusDigestParser : IOplusDigestParser
             result.ErrorMessage = "目标文件并非正确的Digest格式";
             return false;
         }
-        
+
         result.OemType = qcomImageParseResult.OemType;
         result.SocType = qcomImageParseResult.SocType;
         result.RootCaHashHex = qcomImageParseResult.RootCaHash;
