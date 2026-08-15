@@ -1,0 +1,3 @@
+[submodule "externals/QcomImageUtils"]
+	path = externals/QcomImageUtils
+	url = https://github.com/JacksonOnly/QualcommImageUtils.git
